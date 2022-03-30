@@ -1,0 +1,24 @@
+.content {
+  padding-top: 2rem;
+  letter-spacing: .1rem;
+  @include breakpoint {
+    padding-top: 0;
+  }
+  &--showcase {
+    color: $neutral-100;
+    display: block;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    padding-bottom: .5rem;
+    @include breakpoint {
+      text-align: left;
+    }    
+  }
+  &:first-of-type {
+    .content--showcase {
+      text-transform: none;
+    }
+  }
+}

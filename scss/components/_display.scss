@@ -1,0 +1,43 @@
+@import "data";
+
+.display {
+  padding: 2rem;
+  background: $secondary;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include breakpoint {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    padding: 5.5rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    @include breakpoint {
+      text-align: left;
+      font-size: 2.5rem;
+      line-height: normal;
+      margin-bottom: 1rem;
+    }
+    &--highlight {
+      color: $accent;
+    }
+  }
+  &__info {
+    text-align: center;
+    padding: 1rem 0;
+    color: $neutral-300;
+    line-height: 1.6rem;
+    @include breakpoint {
+      text-align: left;
+      padding-right: 3rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &__data {
+    @include breakpoint {
+      padding-right: 5.5rem;
+    }
+  }
+}

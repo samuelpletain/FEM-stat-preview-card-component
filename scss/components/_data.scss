@@ -1,0 +1,14 @@
+@import 'content';
+
+.data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: $neutral-300;
+  font-size: .8rem;
+  @include breakpoint {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
